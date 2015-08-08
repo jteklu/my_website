@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyWebsite</title>
+  <title>The Strategizer</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -11,9 +11,11 @@
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <ul class="navbar-brand">
-		      	<li><%= link_to 'jt', root_path %></li>
-		      </ul>
+		      <div class="logo-font">
+			      <ul class="navbar-brand">
+			      	<li><%= link_to 'jt', root_path %></li>
+			      </ul>
+		      </div>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
@@ -23,8 +25,28 @@
 		  </div>
 		</nav>
 	</header>
-
 <%= yield %>
+<div class ="footer">
+	
+	<br class = "clear" />
+</div>		
+
+<nav class="navbar navbar-fixed-bottom">
+	<div class="container-fluid">
+		<div class="navbar-footer">
+		    <div class = "contaimer" style="padding-bottom:30px;">
+				<div class = "col-xs-12 col-sm-6, pull-right">
+					<a href="https://www.linkedin.com/pub/jonathan-teklu/53/1aa/650">
+						<img src="linkedin.png" /> 
+					</a>
+					<a href="https://github.com/jteklu">
+						<img src="github.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
 
 </body>
 </html>

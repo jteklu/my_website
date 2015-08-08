@@ -1,34 +1,53 @@
-.clear {
-  clear:both;
+body {
+    background: url('tunnel_vision.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
 
-.circle {
+h1 {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 100;
+    font-size: 60px;
+    margin: 0px;
+}
+
+p {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 200;
+}
+            
+.box {
+    background-color: rgba(0,0,0,0.4);
+    padding:20px;
+    width: 1000px;
+    margin: 100px;
+    text-align: center; 
+}
+
+.my_name {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 400;
+}
+
+.logo-font {
     font-weight:bold;
     font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 30px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg);
-    -webkit-transform:rotate(11deg);
+    color: #f84899;
+    font-size: 150px;
+    margin-left: 25px; 
 }
 
 .about_title {
     position: relative;
     font-weight:bold;
     font-style: italic;
-    color: #f84362;
     font-size: 30px;
-    width: 180px;
+    width: 140px;
     transform:rotate(-11deg);
     -ms-transform:rotate(-11deg);
     -webkit-transform:rotate(-11deg);
@@ -37,7 +56,7 @@
 .image_rotation {
     position: relative;
     border-radius: 100%;
-    width: 180px;
+    width: 140px;
     height: 180px;
     margin: 5px 5px;
     image-align: center;
@@ -45,16 +64,4 @@
     transform:rotate(-11deg);
     -ms-transform:rotate(-11deg);
     -webkit-transform:rotate(-11deg);
-}
-
-.my_name {
-    font-weight:bold;
-    font-style: italic;
-    color: #f84342;
-    font-size: 30px;
-}
-
-.about_text {
-    font-style: italic;
-    font-size: 30px;
 }
