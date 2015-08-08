@@ -13,14 +13,16 @@ h1 {
     font-weight: 100;
     font-size: 60px;
     margin: 0px;
+    text-align: center;
 }
 
 p {
     color: white;
     font-family: 'Helvetica Neue', Helvetica;
     font-weight: 200;
+    text-align: center;
 }
-   
+
 .navbar-default {
     background-color: #E0E0E0;
     border-color: #E7E7E7;
@@ -36,10 +38,13 @@ p {
 
 .box {
     background-color: rgba(0,0,0,0.4);
-    padding:20px;
     width: 1000px;
-    margin: 100px;
-    text-align: center; 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px; 
 }
 
 .my_name {
@@ -70,6 +75,13 @@ p {
     transform:rotate(-11deg);
     -ms-transform:rotate(-11deg);
     -webkit-transform:rotate(-11deg);
+}
+
+.about_text {
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica;
+    font-weight: 200;
+    text-align: center;
 }
 
 .navbar-footer {
