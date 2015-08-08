@@ -8,21 +8,21 @@
 </head>
 <body>
 	<header>
-		<div class = "col-xs-3">
-			<div class="circle">
-				<br />
-				<%= link_to 'jt', root_path %>
-			</div>
-		</div>
-		<div class = "col-xs-5, :posotion => pull-right">
-			<br />
-			<%= link_to 'About', about_path %>
-			<br />
-		</div>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <ul class="navbar-brand">
+		      	<li><%= link_to 'jt', root_path %></li>
+		      </ul>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><%= link_to 'About', about_path %></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 	</header>
-
-	<br class="clear" />
-	<br class="clear" />
 
 <%= yield %>
 

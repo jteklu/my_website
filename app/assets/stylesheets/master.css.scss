@@ -14,10 +14,47 @@
     margin: 10px 10px;
     text-align: center;
     color: #FFF;
-    font-size: 10px;
+    font-size: 30px;
     line-height: 16px;
     cursor: pointer;
     transform:rotate(11deg);
     -ms-transform:rotate(11deg);
     -webkit-transform:rotate(11deg);
+}
+
+.about_title {
+    position: relative;
+    font-weight:bold;
+    font-style: italic;
+    color: #f84362;
+    font-size: 30px;
+    width: 180px;
+    transform:rotate(-11deg);
+    -ms-transform:rotate(-11deg);
+    -webkit-transform:rotate(-11deg);
+}
+
+.image_rotation {
+    position: relative;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    margin: 5px 5px;
+    image-align: center;
+    cursor: pointer;
+    transform:rotate(-11deg);
+    -ms-transform:rotate(-11deg);
+    -webkit-transform:rotate(-11deg);
+}
+
+.my_name {
+    font-weight:bold;
+    font-style: italic;
+    color: #f84342;
+    font-size: 30px;
+}
+
+.about_text {
+    font-style: italic;
+    font-size: 30px;
 }
