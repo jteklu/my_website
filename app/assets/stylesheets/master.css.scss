@@ -7,7 +7,7 @@ body {
     background-size: cover; 
 }
 
-h1 {
+.container h1 {
     color: white;
     font-family: 'Helvetica Neue', Helvetica;
     font-weight: 100;
@@ -23,45 +23,39 @@ p {
     text-align: center;
 }
 
-.navbar-default {
-    background-color: #E0E0E0;
-    border-color: #E7E7E7;
+blockquote {
+    position: relative;
+    color: white;
     font-family: 'Helvetica Neue', Helvetica;
-    font-size: 30px;
-}   
-
-.navbar-brand {
-    font-family: 'Helvetica Neue', Helvetica;
-    font-size: 32px;
-    color: #E7E7E7;
-}
-
-.box {
-    background-color: rgba(0,0,0,0.4);
-    width: 1000px;
-    text-align: center;
+    font-weight: 100;
     margin-top: 10px;
-    margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    padding-left: 20px; 
+}
+ 
+.navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.5);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+} 
+
+.jumbotron {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.5);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
 }
 
 .my_name {
     color: white;
     font-family: 'Helvetica Neue', Helvetica;
-    font-weight: 400;
-}
-
-.about_title {
-    position: relative;
-    font-weight:bold;
-    font-style: italic;
-    font-size: 30px;
-    width: 140px;
-    transform:rotate(-11deg);
-    -ms-transform:rotate(-11deg);
-    -webkit-transform:rotate(-11deg);
+    font-weight: 100;
+    font-size: 30;
 }
 
 .image_rotation {
@@ -70,20 +64,10 @@ p {
     width: 140px;
     height: 180px;
     margin: 5px 5px;
+    padding-top: 40px;
     image-align: center;
     cursor: pointer;
     transform:rotate(-11deg);
     -ms-transform:rotate(-11deg);
     -webkit-transform:rotate(-11deg);
-}
-
-.about_text {
-    color: white;
-    font-family: 'Helvetica Neue', Helvetica;
-    font-weight: 200;
-    text-align: center;
-}
-
-.navbar-footer {
-    background: url('github.png', 'linkedin.png');
 }

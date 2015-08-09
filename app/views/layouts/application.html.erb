@@ -8,39 +8,40 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-default" role-"navigation">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-			    <ul class="navbar-brand">
-			      <li><%= link_to 'jt', root_path %></li>
-			    </ul>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><%= link_to 'About', about_path %></li>
-		      </ul>
-		    </div>
-		  </div>
+		<nav class="navbar navbar-transparent navbar-relative" role="navigation">
+		  <div class="navbar-inner"> 
+			  	<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      	<a href="http://piczly.com" class="navbar-brand">
+                    	<img src="http://ec2-54-69-36-221.us-west-2.compute.amazonaws.com/wp-content/uploads/2014/12/logo-grey1.png"/>
+                	</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li><%= link_to "HOME", root_path %></li>
+			        <li><%= link_to "ABOUT", about_path %></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+		 </div>
 		</nav>
-	</header>
+</header>
+
+	<div class="jumbotron">
+		<div class="container">
+
 <%= yield %>
-<br class = "clear" />	
-<nav class="navbar navbar-bottom">
-	<div class="container-fluid">
-		<div class="navbar-footer">
-		    <div class = "container" style="padding-bottom:30px">
-				<div class = "col-xs-12 col-sm-6, pull-right">
-					<a href="https://www.linkedin.com/pub/jonathan-teklu/53/1aa/650">
-						<img src="linkedin.png" /> 
-					</a>
-					<a href="https://github.com/jteklu">
-						<img src="github.png" />
-					</a>
-				</div>
-			</div>
+
 		</div>
-	</div>
-</nav>
+ 	</div>
 
 </body>
 </html>
