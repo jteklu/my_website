@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150815184359) do
   enable_extension "plpgsql"
 
   create_table "blog_posts", force: true do |t|
+    t.string   "title"
     t.string   "name"
     t.text     "blog_post"
     t.datetime "created_at"

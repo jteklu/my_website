@@ -1,6 +1,8 @@
 MyWebsite::Application.routes.draw do
   root 'pages#index'
+
   resources :pages
+  get 'blog', :to => 'pages#show' 
   get 'about', :to => 'pages#about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
