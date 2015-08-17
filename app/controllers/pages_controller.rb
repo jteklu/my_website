@@ -5,4 +5,8 @@ class PagesController < ApplicationController
 	def about
 	end
 
+	def create
+		@blog = BlogPost.new
+	end
+
 end

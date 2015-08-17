@@ -4,7 +4,7 @@ MyWebsite::Application.routes.draw do
   get 'about', :to => 'pages#about'
 
   resources :pages do
-    resources :blogs, :only => :create 
+    resources :blogs 
   end
   
   # The priority is based upon order of creation: first created -> highest priority.

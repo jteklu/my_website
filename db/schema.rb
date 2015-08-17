@@ -16,10 +16,9 @@ ActiveRecord::Schema.define(version: 20150815184359) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blog_posts", force: true do |t|
-    t.string   "title"
+  create_table "posts", force: true do |t|
     t.string   "name"
-    t.text     "blog_post"
+    t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
