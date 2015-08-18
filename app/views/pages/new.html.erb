@@ -1,0 +1,12 @@
+<h4>Leave Your Message</h4>
+<%= simple_form_for Page.new do |f| %>
+	<div class="modal-body">
+		<%= f.input :name, :label => "Your name", :placeholder => "John Snow." %>
+		<br />
+		<%= f.input :message, :lable => "Your message", :placeholder => "Brothers, winter is coming!" %>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			<%= f.submit 'Post Message', :class => 'btn btn-danger' %>
+	</div>
+<% end %>
