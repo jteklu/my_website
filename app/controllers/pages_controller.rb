@@ -11,7 +11,7 @@ class PagesController < ApplicationController
 		if @page.invalid?
 			flash[:error] = '<strong>Could not save</strong>, the data you entered is incorrect.'
 		end	
-		redirect_to root_path
+		redirect_to about_path
 	end
 
 	def about
